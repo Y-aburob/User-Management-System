@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="User Management CRUD Interface">
+    <meta name="keywords" content="user, User Management, CRUD, , Interface">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/CRUD.jpg" type="image/x-icon">
+
+
+    <!-- font-family: "Roboto", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>User Management System</title>
+</head>
+<body>
+
+    <div class="sure_pop pop_up" id="sure_pop">
+        <h3>Are You Sure You Want To Delete this card?</h3>
+        <div class="button_confirm delete_buttons" id="button_confirm">
+            <button id="cancel_delete" class="confirm_add">Cancel</button>
+            <button id="confirm_delete" class="confirm_add">Confirm</button>
+        </div>
+    </div>
+    <section class="pop_up" id="pop_up">
+        <div class="inputs" id="inputs">
+            <label for="">Name</label>
+            <input type="text" autocomplete="off" placeholder="Enter Your Name" class="add_user_inputs" id="name_input">
+            <label for="">Email</label>
+            <input type="email" autocomplete="off" placeholder="Enter Your Email" class="add_user_inputs" id="email_input">
+            <label for="">Phone Number</label>
+            <input type="number" autocomplete="off" placeholder="Enter Your Number" class="add_user_inputs" id="number_input">
+        </div>
+
+        <div class="button_confirm" id="button_confirm">
+            <button id="cancel_add" class="confirm_add">Cancel</button>
+            <button id="confirm_add" class="confirm_add">Confirm</button>
+        </div>
+    </section>
+
+    <section class="pop_up" id="pop_up_edit">
+        <div class="inputs" id="inputs">
+                <label for="">Name</label>
+                <input type="text" autocomplete="off" placeholder="Enter Your Name" class="add_user_inputs" id="name_input_edit">
+                <label for="">Email</label>
+                <input type="email" autocomplete="off" placeholder="Enter Your Email" class="add_user_inputs" id="email_input_edit">
+                <label for="">Phone Number</label>
+                <input type="number" pattern="\d{0,10}" max="10" autocomplete="off" placeholder="Enter Your Number" class="add_user_inputs" id="number_input_edit">
+        </div>
+
+        <div class="button_confirm" id="button_confirm">
+            <button id="cancel_add_edit" class="confirm_add">Cancel</button>
+            <button id="confirm_add_edit" class="confirm_add">Confirm</button>
+        </div>
+    </section>
+
+    <div class="main_container" id="main_container">
+
+        <section class="form" id="form">
+
+            
+            <header class="header">
+                <img src="./media/icons8-management-30.png" width="35px" height="35px" alt="oops">
+                <div class="head">
+                    <h1 id="title_header" class="title_header">User Management System</h1>
+                </div>
+            </header>
+            <div class="buttonn">
+                <button id="add_user" class="add_user"><img width="24px" height="24px" src="./media/social_16043427.png" alt="oops"> Add User</button>
+            </div>
+            
+
+            
+        </section>
+
+        <div class="no" id="no">Add users to display them here. <img width="56px" height="56px" src="./media/contentment_12802170.png" alt="oops"></div>
+        <section class="cards_container" id="cards_container">
+
+                </div>
+
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+                <tr>
+                    <td id="name0">Name</td>
+                    <td id="email0">Email</td>
+                    <td id="phone0">Phone Number</td>
+                    <td>
+                        <img id="edit0" src="media/edit.png" alt="oops" width="24px" height="24px">
+                        <img id="delete0" src="media/trash.png" alt="oops" width="24px" height="24px">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Email</td>
+                    <td>Phone Number</td>
+                    <td>
+                        <img id="edit" src="media/edit.png" alt="oops" width="24px" height="24px">
+                        <img id="search" src="media/trash.png" alt="oops" width="24px" height="24px">
+                    </td>
+                </tr> -->
